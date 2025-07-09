@@ -9,6 +9,7 @@ function App() {
   return (
     <>
     <Home name="Mohit Dayma - Aman ke papa" age="21"/> 
+    <br />  
     <Temp />
     </>
   );

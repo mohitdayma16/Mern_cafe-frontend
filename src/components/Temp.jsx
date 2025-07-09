@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useState } from 'react';
 // const Temp = (flag) => {
 //     if(flag){
 //         return(
@@ -26,17 +26,32 @@ import React from 'react'
 //     return {flag} && <h1>flag is true</h1>;
 // }
 
+// export default function Temp(){
+//     const handleClick = ()=>{
+//         alert("Hello jii")
+//     }
+//     const handleSubmit = (name)=>{
+//         alert(`Hello ${name} jii`)
+//     }
+//     return(
+//         <div>
+//             <button onClick={handleClick}>Click me</button>
+//             <button onClick={()=>handleSubmit("Mohit")}>Submit</button>
+//         </div>
+//     );
+// }
+
 export default function Temp(){
+    const [score,setScore] = useState(0);
     const handleClick = ()=>{
-        alert("Hello jii")
-    }
-    const handleSubmit = (name)=>{
-        alert(`Hello ${name} jii`)
+        setScore(score+1);
     }
     return(
-        <div>
-            <button onClick={handleClick}>Click me</button>
-            <button onClick={()=>handleSubmit("Mohit")}>Submit</button>
-        </div>
+    <div>
+        {score}
+        <p>
+            <button onClick={handleClick}> Update Score</button>
+        </p>
+    </div>
     );
 }
