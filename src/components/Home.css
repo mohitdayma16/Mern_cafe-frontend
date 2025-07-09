@@ -1,0 +1,42 @@
+/* Home.css */
+#App-header {
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  min-height: 100vh;
+  padding: 50px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  margin: 0 20px;
+  transition: all 0.4s ease;
+}
+
+#App-header:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+#Name-Heading {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #34495e;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+  backdrop-filter: blur(4px);
+}
