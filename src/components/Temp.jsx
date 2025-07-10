@@ -43,14 +43,18 @@ import { useState } from 'react';
 
 export default function Temp(){
     const [score,setScore] = useState(0);
-    const handleClick = ()=>{
+    const increment = ()=>{
         setScore(score+1);
+    }
+    const decrement = ()=>{
+        setScore(score-1);
     }
     return(
     <div>
         {score}
         <p>
-            <button onClick={handleClick}> Update Score</button>
+            <button onClick={increment}>Increment</button>
+            <button onClick={decrement}>Decrement</button>
         </p>
     </div>
     );
