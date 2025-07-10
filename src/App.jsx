@@ -8,16 +8,16 @@ import Register from './components/Register'
 
 function App() {
   return (
-    // <>
-    // <Home name="Mohit Dayma - Aman ke papa" age="21"/> 
-    // <br />  
-    // <Temp />
-    // </>
+    <>
+    <Home name="Mohit Dayma" age="21"/> 
+    <br />  
+    <Temp />
     <div>
       <h1>Cafe Frontend</h1>
       <Register/>
       <h3>This is footer</h3>
     </div>
+    </>
   );
 }
 
